@@ -1,0 +1,106 @@
+@import "@xyflow/react/dist/style.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 210 20% 98%;
+    --foreground: 153 8% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 153 8% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 153 8% 15%;
+    --primary: 0 50% 36%;
+    --primary-foreground: 45 45% 95%;
+    --secondary: 42 53% 52%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 45 35% 95%;
+    --muted-foreground: 153 6% 42%;
+    --accent: 148 24% 28%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 45 20% 88%;
+    --input: 45 20% 88%;
+    --ring: 42 53% 52%;
+    --radius: 0.85rem;
+  }
+
+  .dark {
+    --background: 153 15% 8%;
+    --foreground: 45 35% 95%;
+    --card: 153 12% 11%;
+    --card-foreground: 45 35% 95%;
+    --popover: 153 12% 11%;
+    --popover-foreground: 45 35% 95%;
+    --primary: 0 55% 42%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 42 55% 54%;
+    --secondary-foreground: 153 15% 8%;
+    --muted: 153 10% 16%;
+    --muted-foreground: 45 15% 65%;
+    --accent: 148 24% 28%;
+    --accent-foreground: 45 35% 95%;
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 153 10% 18%;
+    --input: 153 10% 18%;
+    --ring: 42 53% 52%;
+  }
+}
+
+/* Custom Scrollbar for genealogy navigation */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #F8F4E9;
+}
+::-webkit-scrollbar-thumb {
+  background: #C49A45;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B2E2E;
+}
+
+/* Pattern and Cultural Ornaments */
+.bg-parchment-pattern {
+  background-color: #F8F4E9;
+  background-image: radial-gradient(#C49A45 0.75px, transparent 0.75px), radial-gradient(#C49A45 0.75px, #F8F4E9 0.75px);
+  background-size: 30px 30px;
+  background-position: 0 0, 15px 15px;
+  background-opacity: 0.08;
+}
+
+.cloud-border {
+  border-image: linear-gradient(to right, #8B2E2E, #C49A45, #365847) 1;
+}
+
+/* React Flow custom styling */
+.react-flow__attribution {
+  display: none !important;
+}
+
+.react-flow__controls-button {
+  background-color: white !important;
+  border-bottom: 1px solid #EFE7D3 !important;
+  color: #252B28 !important;
+  width: 32px !important;
+  height: 32px !important;
+}
+
+.react-flow__controls-button:hover {
+  background-color: #F8F4E9 !important;
+  color: #8B2E2E !important;
+}
+
+.react-flow__minimap {
+  background-color: rgba(248, 244, 233, 0.95) !important;
+  border: 1px solid #E2BA68 !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 16px rgba(37, 43, 40, 0.12) !important;
+}
